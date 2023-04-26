@@ -1,12 +1,83 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
+    <title>Home | RIVASVACIAMADRID</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    
   </head>
+
   <body>
-    <h1>Hello, UOC!</h1>
+    <header>
+      <div class="header-container">
+        <a href="index.html"><img src="img/logos/escudo_rivas.png" class="logo" alt="Escudo Rivas"></a>
+        <div class="newsletter">
+          <h2 class="doodle-tittle">newsletter</h2>
+          <p>¡Apúntate!</p>
+          <form>
+              <input type="email" size="30" placeholder="Your email adress">
+              <button>Suscribe</button>
+          </form>
+  </div>
+        <nav class="nav-header">
+          <ul>
+            <li><a href="https://www.twitter.com"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
+            <li><a href="https://www.instagram.com"><img src="img/icons/instagram.svg" alt="instagram"></a></li>
+            <li><a href="https://www.youtube.com"><img src="img/icons/youtube.svg" alt="youtube"></a></li>
+            <li><a href="https://www.facebook.com"><img src="img/icons/facebook.svg" alt="facebook"></a></li>            
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><a href="categories.html">Categorias</a></li>
+            <li><a href="presentation.html">Presentación</a></li>
+            <li><a href="links.html">Enlaces</a></li>
+        </ul>          
+        </nav>
+      </div>
+      <section class="slider">
+        <img src="img/spots/Laguna-del-Campillo-2_cgn.jpg" alt="Laguna del Campillo2">
+        <img src="img/spots/laguna_del_campillo_ruta_1-900x580.jpg" alt="Puente de Arganda">
+        <img src="img/spots/laguna_campillo_0.jpg" alt="Tren de Arganda">
+      </section>
+    </main>
+    <footer>
+      <div class="footer1">
+          <p>Contáctanos<br> Phone: +34688965410<br> Email: Rivas@Rivas.com</p>
+          <nav>
+              <span>Follow us on</span>
+              <ul>
+                  <li><a href="https://www.twitter.com"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
+                  <li><a href="https://www.instagram.com"><img src="img/icons/instagram.svg" alt="instagram"></a></li>
+                  <li><a href="https://www.youtube.com"><img src="img/icons/youtube.svg" alt="youtube"></a></li>
+                  <li><a href="https://www.facebook.com"><img src="img/icons/facebook.svg" alt="facebook"></a></li>
+              </ul>
+          </nav>
+      </div>
+      <hr>
+      <div class="footer2">
+          <p>2023 © Jorge Martín-Serrano</p>
+          <nav>
+              <ul>
+                  <li><a href="">Terms and conditions</a></li>
+                  <li><a href="">Privacy policy</a></li>
+                  <li><a href="">Cookies</a></li>
+              </ul>
+          </nav>
+      </div>
+  </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
