@@ -598,7 +598,7 @@ $(".slider").slick({
     if (typeof define === "function" && define.amd) define([
         "jquery"
     ], factory);
-    else module.exports = factory(require("7e8ca5df615d2f96"));
+    else module.exports = factory(require("4f762d0c90d99bc9"));
 })(function($) {
     "use strict";
     var Slick = window.Slick || {};
@@ -2265,7 +2265,7 @@ $(".slider").slick({
     };
 });
 
-},{"7e8ca5df615d2f96":"hgMhh"}],"hgMhh":[function(require,module,exports) {
+},{"4f762d0c90d99bc9":"hgMhh"}],"hgMhh":[function(require,module,exports) {
 /*!
  * jQuery JavaScript Library v3.6.4
  * https://jquery.com/
