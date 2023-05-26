@@ -18,34 +18,27 @@
   <body>
     <header>
       <div class="header-container">
-        <a href="index.html"><img src="img/logos/escudo_rivas.png" class="logo" alt="Escudo Rivas"></a>
-        <div class="newsletter">
-          <h2 class="doodle-tittle">newsletter</h2>
-          <p>¡Apúntate!</p>
-          <form>
-              <input type="email" size="30" placeholder="Your email adress" label="newsletter">
-              <button>Suscribe</button>
-          </form>
-  </div>
-        <nav class="nav-header">
-          <ul>
-            <li><a href="https://www.twitter.com"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
-            <li><a href="https://www.instagram.com"><img src="img/icons/instagram.svg" alt="instagram"></a></li>
-            <li><a href="https://www.youtube.com"><img src="img/icons/youtube.svg" alt="youtube"></a></li>
-            <li><a href="https://www.facebook.com"><img src="img/icons/facebook.svg" alt="facebook"></a></li>            
-          </ul>
-        </nav>
+        <div class="logo-container">
+          <a href="index.html">
+          <div class="logo"></div>
+          </a>
+        </div>
+        <div class="tittle">
+          <h1>Descubre<br/>Rivasvaciamadrid</h1>
+        </div>
+        <div class="new-nav">
+          <div class="newsletter">
+            <h2 class="doodle-tittle">newsletter</h2>
+            <p>¡Apúntate!</p>
+            <form>
+                <input type="email" size="30" placeholder="Your email adress" label="newsletter">
+                <button>Suscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <svg>
-        <defs>
-          <clipPath id="myClip" clipPathUnits="objectBoundingBox">
-            <path d="M0.2,0.5 L0.5,0.1 L0.8,0.5 L0.5,0.9 Z" />
-          </clipPath>
-        </defs>
-        <image id="masked-image" href="img/icons/twitter.svg" x="50" y="50" width="200" height="100" />
-      </svg>
       <div class="nav-container">
         <nav>
           <ul>
@@ -56,10 +49,19 @@
         </nav>
       </div>
       <section class="slider">
-        <img src="img/spots/Laguna-del-Campillo-2_cgn.jpg" alt="Laguna del Campillo2">
-        <img src="img/spots/laguna_del_campillo_ruta_1-900x580.jpg" alt="Puente de Arganda">
-        <img src="img/spots/laguna_campillo_0.jpg" alt="Tren de Arganda">
+        <img src="img/spots/Laguna-del-Campillo-2_cgn_800.webp" 
+              srcset="img/spots/Laguna-del-Campillo-2_cgn_650.webp 650w,
+              img/spots/Laguna-del-Campillo-2_cgn_500.webp 500w"
+              sizes="(max-width: 500px) 100vw,
+              (max-width: 650px) 90vw, 
+              80vw" 
+              alt="Laguna del Campillo2">
+        <img src="img/spots/laguna_del_campillo_ruta_1-900x580_800.webp" alt="Puente de Arganda">
+        <img src="img/spots/laguna_campillo_0_800.webp" alt="Tren de Arganda">
       </section>
+      <div class="intro">
+        <img src="img/logos/escudo_rivas.png" alt="Letras Rivas">
+      </div>
     </main>
     <footer>
       <div class="footer1">

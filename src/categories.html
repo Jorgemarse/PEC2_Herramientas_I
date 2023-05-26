@@ -12,23 +12,24 @@
   <body>
     <header>
       <div class="header-container">
-        <a href="index.html"><img src="img/logos/escudo_rivas.png" class="logo" alt="Escudo Rivas"></a>
-        <div class="newsletter">
-          <h2 class="doodle-tittle">newsletter</h2>
-          <p>¡Apúntate!</p>
-          <form>
-              <input type="email" size="30" placeholder="Your email adress">
-              <button>Suscribe</button>
-          </form>
+        <div class="logo-container">
+          <a href="index.html">
+          <div class="logo"></div>
+          </a>
         </div>
-        <nav class="nav-header">
-          <ul>
-            <li><a href="https://www.twitter.com"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
-            <li><a href="https://www.instagram.com"><img src="img/icons/instagram.svg" alt="instagram"></a></li>
-            <li><a href="https://www.youtube.com"><img src="img/icons/youtube.svg" alt="youtube"></a></li>
-            <li><a href="https://www.facebook.com"><img src="img/icons/facebook.svg" alt="facebook"></a></li>            
-          </ul>
-        </nav>
+        <div class="tittle">
+          <h1>Descubre<br/>Rivasvaciamadrid</h1>
+        </div>
+        <div class="new-nav">
+          <div class="newsletter">
+            <h2 class="doodle-tittle">newsletter</h2>
+            <p>¡Apúntate!</p>
+            <form>
+                <input type="email" size="30" placeholder="Your email adress" label="newsletter">
+                <button>Suscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -46,28 +47,43 @@
         <div class="grid">
             <a href="">
             <figure>
-                
-                    <img src="img/spots/batalla_jarama.jpg" alt="Batalla del Jarama">
-                    <figcaption>Histórico</figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/spots/batalla_jarama_medium.webp">
+                <source media="(min-width: 480px)" srcset="img/spots/batalla_jarama_small.webp">
+                <img src="img/spots/batalla_jarama_large.webp" alt="Batalla del Jarama">
+              </picture>
+              <figcaption>Histórico</figcaption>
                 
             </figure>
             </a>
             <a href="">
             <figure>
-                    <img src="img/spots/auditoriomiguelrios.jpg" alt="Auditorio Miguel Rios">
-                    <figcaption>Conciertos</figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/spots/auditoriomiguelrios_medium.webp">
+                <source media="(min-width: 480px)" srcset="img/spots/auditoriomiguelrios_small.webp">
+                <img src="img/spots/auditoriomiguelrios_large.webp" alt="Batalla del Jarama">
+              </picture>
+              <figcaption>Conciertos</figcaption>
             </figure>
             </a>
             <a href="detail.html">
             <figure>
-                    <img src="img/spots/Laguna-del-campilo-1.jpg" alt="Laguna del Campillo">
-                    <figcaption>Naturaleza</figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/spots/Laguna-del-campilo-1_medium.webp">
+                <source media="(min-width: 480px)" srcset="img/spots/Laguna-del-campilo-1_small.webp">
+                <img src="img/spots/Laguna-del-campilo-1_large.webp" alt="Batalla del Jarama">
+              </picture>
+              <figcaption>Naturaleza</figcaption>
             </figure>
             </a>
             <a href="">
             <figure>
-                    <img src="img/spots/Puente-de-La-Poveda-1.jpg" alt="Tren de Arganda">
-                    <figcaption>Monumentos</figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/spots/Puente-de-La-Poveda-1_medium.webp">
+                <source media="(min-width: 480px)" srcset="img/spots/Puente-de-La-Poveda-1_small.webp">
+                <img src="img/spots/Puente-de-La-Poveda-1_large.webp" alt="Batalla del Jarama">
+              </picture>
+              <figcaption>Monumentos</figcaption>
             </figure>
             </a>
         </div>

@@ -17,6 +17,12 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Bitter";
+  src: url("./fonts/Bitter-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 *{
   margin: 0;
   padding: 0;
@@ -32,17 +38,33 @@ body{
 main{background-color: #FFF7E8;}
 /********* HEADER ****************/
 header {
-  background-color: #a72424;
-  background-image:url('./img/spots/o_1bosl3lciuociudmoeplf16hi26.jpg');
-  background-position: 400 500;
+  /* background-color: #a72424; */
+  background: linear-gradient(#ff0000, #e7f0e7);
+  /* background-image:url('./img/spots/o_1bosl3lciuociudmoeplf16hi26.jpg'); */
+  background-position: 10;
   height: 190px;
   display: flex;
   align-items: center;
 }
-.logo img {
-  height: 50px;
+.logo-container{
+  height: 170px;
+  width: 180px;
+  margin-left: 50px;
+  transition: transform 0.3s ease;
 
 }
+.logo-container:hover {
+  transform: scale(1.2);
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/icons/Logo_Rivas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .header-container {
   width: 100%;
   display: flex;
@@ -62,14 +84,20 @@ header {
 .header-container nav li:last-child {
   margin-right: 0;
 }
+.tittle{
+  font-family: "Bitter";
+  text-align: center;
+}
+.new-nav{
+  border-color: black;
+}
 .newsletter{
   background:none;
-  color:#d83c3c;
+  color:#2b2828;
   text-align: center;
-  height: 300px;
+  height: 210px;
   width: 100%;
   position: relative;
-  z-index: 0; 
 }
 .newsletter::before{
   content:"";
@@ -83,7 +111,7 @@ header {
 .newsletter > h2{
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 20px;
   margin:auto;
   margin-top: 40px;
   padding-top: 20px;
@@ -91,7 +119,7 @@ header {
 .newsletter p{
   text-align: center;
   max-width: 100%;
-  font-size: 20px;
+  font-size: 15px;
   padding: 0px 50px 0px 50px;
 }
 .newsletter form{margin-top: 10px;}
@@ -99,7 +127,7 @@ header {
   padding: 15px;
   border-radius: 5px;
   background-color: #FFFFFF;
-  width: 25%;
+  width: 50%;
 }
 .newsletter button{
   padding: 15px;
@@ -211,7 +239,52 @@ header {
       margin-right: 65px;
   }
 }
+.slider{
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+}
+.slider img{
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+.intro{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+}
+.intro img{
+  margin-bottom: 40px;
+  width: 100%;
+  animation: hanging 2s ease 0s 1 normal forwards;
+}
+@keyframes hanging {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
 
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
 
 /************* FOOTER ******************/
 footer{
@@ -436,6 +509,18 @@ h2.line::after{right: -530px;}
 .detail-container img{
   width: 100%;
 }
+.image-detail-block{
+  margin: auto;
+  width: 60%;
+  display:flex;
+  justify-content: center;
+  border-color: black;
+}
+.image-detail-block img{
+  width: 100%; 
+  height: auto;
+  margin: 0 10px;
+}
 iframe{
   width: 100%;
   height: 790px;
@@ -465,10 +550,14 @@ iframe{
 .presen-container article{
   font-weight: 700;
   margin: 0px 15px 15px 15px;
-  padding: 100px 15px 15px 15px; 
+  padding: 0px 15px 15px 15px; 
 }
-.presen-container article h1, .presen-container article p{
+.presen-container article p{
   margin-bottom: 20px;
+}
+.escudo{
+  width: 30%;
+  margin: auto;
 }
 
 /************* LINKS ******************/
@@ -489,31 +578,23 @@ iframe{
   color:#2A2A2A;
   font-weight: 700;
 }
+
 /******* Animacion SVG ****************/
 svg {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(300%, 0%); 
   width: 300px;
   height: 200px;
+  background-color: #FFF7E8;
 }
 image {
-  animation: rotateImage 4s linear infinite;
+  animation: rotateImage 10s linear infinite;
   transform-origin: center center;
 }
 @keyframes rotateImage {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+} 
 /******************/
 
-svg {
-  width: 300px;
-  height: 200px;
-  background-color: lightgray;
-}
 #masked-image {
   clip-path: url(#myClip);
 }
