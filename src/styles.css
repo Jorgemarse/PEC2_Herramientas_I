@@ -251,17 +251,7 @@ header {
 .slider img{
   clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
 }
-.intro{
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  padding: 30px;
-}
-.intro img{
-  margin-bottom: 40px;
-  width: 100%;
-  animation: hanging 2s ease 0s 1 normal forwards;
-}
+
 @keyframes hanging {
 	0%,
 	100% {
