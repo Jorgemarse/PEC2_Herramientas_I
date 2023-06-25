@@ -3,6 +3,7 @@
   src: url("Montserrat-Regular.19870125.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("Montserrat-Bold.90939356.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url("Montserrat-Black.a6c6d746.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
   src: url("Bitter-Black.1d150ee1.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -659,7 +663,6 @@ svg {
 }
 
 image {
-  transform-origin: center;
   animation: 10s linear infinite rotateImage;
 }
 
